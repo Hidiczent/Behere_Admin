@@ -8,6 +8,9 @@ export default {
         primary: "#567C8D",
         secondary: "#F8F1E6",
       },
+      fontFamily: {
+        lao: ['"Noto Sans Lao"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
