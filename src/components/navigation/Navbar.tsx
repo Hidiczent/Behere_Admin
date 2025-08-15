@@ -1,10 +1,18 @@
 // src/components/Navbar.tsx
 import { EnvelopeIcon, BellIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <nav className="sticky top-0 bg-white shadow-sm z-50 px-6 py-4 flex justify-between items-center">
-      <h1 className="text-xl font-bold text-primary">Dashboard</h1>
+      {/* Dashboard link */}
+      <Link
+        to="/dashboard"
+        className="text-xl font-bold text-primary hover:underline"
+      >
+        Dashboard
+      </Link>
+
       <div className="flex items-center gap-6">
         <EnvelopeIcon className="h-6 w-6 text-primary cursor-pointer hover:text-blue-500 transition" />
         <BellIcon className="h-6 w-6 text-primary cursor-pointer hover:text-blue-500 transition" />
